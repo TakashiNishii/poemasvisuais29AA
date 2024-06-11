@@ -21,11 +21,11 @@ const PoemasList = () => {
         <PoemasListGrid setOpen={setOpen} setSelectedImage={setImageSelected} />
       }
       <dialog id="my_modal_1" className={classNames("modal",
-        open && "modal-open"
+        open && "modal-open "
       )}>
-        <div className="modal-box flex justify-center border-2 border-secondary">
+        <div className="modal-box min-w-[60vw] flex justify-center border-2 border-secondary">
           <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2" onClick={() => setOpen(false)}>✕</button>
-          <Image width={400} height={400} src={`/Poemas/Poema${imageSelected}.jpeg`} alt='Poema visual' className="w-full" />
+          <Image width={800} height={800} src={`/Poemas/Poema${imageSelected}.jpeg`} alt='Poema visual' className="w-full h-auto object-fill" />
         </div>
         <form method="dialog" className="modal-backdrop">
           <button onClick={() => setOpen(false)}>close</button>
