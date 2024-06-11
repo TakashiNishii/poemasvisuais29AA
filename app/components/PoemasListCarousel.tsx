@@ -44,10 +44,6 @@ const PoemasListCarousel = (
           {Array.from({ length: 14 }).map((_, i) => (
             <div key={i} id={`itemmobile${i + 1}`} className="carousel-item w-full">
               <Image width={250} height={250} src={`/Poemas/Poema${i + 1}.jpeg`} alt='Poema visual' className="w-full h-auto" />
-              <MagnifyingGlassCircleIcon className="w-10 h-10 text-primary -ml-10 hover:cursor-pointer" onClick={() => {
-                setSelectedImage(i + 1)
-                setOpen(true)
-              }} />
             </div>
           ))}
         </div>
