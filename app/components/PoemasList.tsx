@@ -16,7 +16,7 @@ const PoemasList = () => {
     <>
       <TypeViewButton typeView={typeView} setTypeView={setTypeView} />
       {typeView === TypeView.carousel ?
-        <PoemasListCarousel />
+        <PoemasListCarousel setOpen={setOpen} setSelectedImage={setImageSelected} />
         :
         <PoemasListGrid setOpen={setOpen} setSelectedImage={setImageSelected} />
       }
