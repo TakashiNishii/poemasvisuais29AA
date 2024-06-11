@@ -1,4 +1,4 @@
-import PoemasListCarousel from "./components/PoemasListCarousel";
+import PoemasList from "./components/PoemasList";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       >
         POEMAS VISUAIS - 29AA 2024
       </h1>
-      <PoemasListCarousel />
+      <PoemasList />
     </main>
   );
 }
