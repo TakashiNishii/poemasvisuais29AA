@@ -23,7 +23,7 @@ const PoemasList = () => {
       <dialog id="my_modal_1" className={classNames("modal",
         open && "modal-open"
       )}>
-        <div className="modal-box flex justify-center">
+        <div className="modal-box flex justify-center border-2 border-secondary">
           <button className="btn btn-sm btn-circle btn-primary absolute right-2 top-2" onClick={() => setOpen(false)}>✕</button>
           <Image width={400} height={400} src={`/Poemas/Poema${imageSelected}.jpeg`} alt='Poema visual' className="w-full" />
         </div>
